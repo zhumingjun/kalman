@@ -23,7 +23,8 @@ m=size(R);
 
 % 分配空间
 xhat=zeros(sz);       % x的后验估计
-P=zeros(n);           % 后验方差估计  n*n
+%P=zeros(n);           % 后验方差估计  n*n
+P=[2,0;0,2];
 xhatminus=zeros(sz);  % x的先验估计
 Pminus=zeros(n);      % n*n
 K=zeros(n(1),m(1));   % Kalman增益  n*m
